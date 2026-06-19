@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Love Story 💖</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  color: white;
+  padding: 20px;
+}
+
+/* Buttons */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(135deg, #ff6f91, #ff9671);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Cards */
+.card {
+  display: none;
+  margin: 30px auto;
+  width: 320px;
+  background: white;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  position: relative;
+  animation: fade 0.4s ease;
+}
+
+@keyframes fade {
+  from {opacity:0; transform: scale(0.9);}
+  to {opacity:1; transform: scale(1);}
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.corner {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.active {
+  display: block;
+}
+
+/* Special Cards */
+.oct {
+  background: linear-gradient(135deg, #ff6f91, #ffb6c1);
+  color: white;
+}
+
+.mar {
+  background: linear-gradient(135deg, #ffd700, #ff9a9e);
+}
+</style>
+</head>
+
+<body>
+
+<h1>Our Love Journey 💕</h1>
+
+<div class="container">
+  <button onclick="showCard(0)">Oct 2024 ✨</button>
+  <button onclick="showCard(1)">Nov 2024</button>
+  <button onclick="showCard(2)">Dec 2024</button>
+  <button onclick="showCard(3)">Jan 2025</button>
+  <button onclick="showCard(4)">Feb 2025</button>
+  <button onclick="showCard(5)">Mar 2025 🎂</button>
+  <button onclick="showCard(6)">Apr 2025</button>
+  <button onclick="showCard(7)">May 2025</button>
+  <button onclick="showCard(8)">Jun 2025</button>
+  <button onclick="showCard(9)">Jul 2025</button>
+  <button onclick="showCard(10)">Aug 2025</button>
+  <button onclick="showCard(11)">Sep 2025</button>
+  <button onclick="showCard(12)">Oct 2025 💫</button>
+  <button onclick="showCard(13)">Nov 2025</button>
+  <button onclick="showCard(14)">Dec 2025</button>
+  <button onclick="showCard(15)">Jan 2026</button>
+  <button onclick="showCard(16)">Feb 2026</button>
+  <button onclick="showCard(17)">Mar 2026 🎂</button>
+  <button onclick="showCard(18)">Apr 2026</button>
+  <button onclick="showCard(19)">May 2026</button>
+  <button onclick="showCard(20)">Jun 2026 ❤️</button>
+</div>
+
+<div id="cards">
+
+<!-- OCT -->
+<div class="card oct active" id="card0">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=1">
+<p>This is where our story began… ❤️ You changed my world forever.</p>
+</div>
+
+<div class="card" id="card1">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=2">
+<p>One month with you already feels like forever 💕</p>
+</div>
+
+<div class="card" id="card2">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=3">
+<p>You became my favorite part of life 🎁❤️</p>
+</div>
+
+<div class="card" id="card3">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=4">
+<p>New year… same love, stronger than ever 💫</p>
+</div>
+
+<div class="card" id="card4">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=5">
+<p>You are more special than anything 💘</p>
+</div>
+
+<!-- MARCH SPECIAL -->
+<div class="card mar" id="card5">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=6">
+<p>Happy Birthday my love 🎂❤️  
+You are my happiness, my world, everything 💫</p>
+</div>
+
+<div class="card" id="card6">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=7">
+<p>Every moment with you feels magical ✨</p>
+</div>
+
+<div class="card" id="card7">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=8">
+<p>I fall for you more every day 😍</p>
+</div>
+
+<div class="card" id="card8">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=9">
+<p>You are my peace ☁️❤️</p>
+</div>
+
+<div class="card" id="card9">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=10">
+<p>With you, everything feels right 💫</p>
+</div>
+
+<div class="card" id="card10">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=11">
+<p>I love you more every single day ❤️</p>
+</div>
+
+<div class="card" id="card11">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=12">
+<p>You are my favorite person 💖</p>
+</div>
+
+<div class="card" id="card12">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=13">
+<p>Another October… still my best day 💫</p>
+</div>
+
+<div class="card" id="card13">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=14">
+<p>Every moment with you matters 💕</p>
+</div>
+
+<div class="card" id="card14">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=15">
+<p>You are my forever ❤️</p>
+</div>
+
+<div class="card" id="card15">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=16">
+<p>New year again… still choosing you 💘</p>
+</div>
+
+<div class="card" id="card16">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=17">
+<p>You make my life complete 💫</p>
+</div>
+
+<div class="card mar" id="card17">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=18">
+<p>Another birthday with you 🎂❤️  
+Still my greatest blessing 💕</p>
+</div>
+
+<div class="card" id="card18">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=19">
+<p>Every day with you is special ✨</p>
+</div>
+
+<div class="card" id="card19">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=20">
+<p>I’ll always choose you 💖</p>
+</div>
+
+<div class="card" id="card20">
+<div class="corner">🌏☁️</div>
+<img src="https://picsum.photos/400/300?random=21">
+<p>Still us… still love… forever ❤️</p>
+</div>
+
+</div>
+
+<script>
+function showCard(index) {
+  let cards = document.querySelectorAll(".card");
+  cards.forEach(card => card.classList.remove("active"));
+  document.getElementById("card" + index).classList.add("active");
+}
+</script>
+
+</body>
+</html>
